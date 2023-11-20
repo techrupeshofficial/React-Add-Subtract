@@ -1,0 +1,64 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+}
+
+.box {
+  background-color: #ffffff;
+  width: 350px;
+  height: 500px;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 50px;
+}
+
+.headinf-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.add {
+  width: 100%;
+  height: 40px;
+  background-color: blue;
+  border: none;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.sub {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  border: none;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.inpbtn {
+  display: flex;
+  flex-direction: coloumn;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+h3 {
+  color: green;
+  text-align: center;
+  margin-top: 60px;
+}
