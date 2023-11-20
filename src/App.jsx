@@ -8,7 +8,7 @@ function App() {
   const valueChangeHandle = (event) => {
     upDateInp(event.target.value);
   };
-
+   
   const addHandle = () => {
     upDateRes(res + parseInt(inp));
     upDateInp("");
