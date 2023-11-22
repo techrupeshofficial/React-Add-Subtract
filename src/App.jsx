@@ -8,6 +8,7 @@ function App() {
   const valueChangeHandle = (event) => {
     upDateInp(event.target.value);
   };
+
    
   const addHandle = () => {
     upDateRes(res + parseInt(inp));
@@ -19,20 +20,32 @@ function App() {
     upDateInp("");
   };
 
+  const onClickClear = () =>{
+    upDateInp();
+    upDateRes(0);
+  }
+
+
   return (
     <div className="box">
       <p className="headinf-text"> Enter a Value to Add / Substract </p>
 
-      <input type="text" value={inp} onChange={valueChangeHandle} />
+      <input type="number" value={inp} onChange={valueChangeHandle} />
       <button className="add" onClick={addHandle}>
-        {" "}
+      
+        {" "}  
         Add{" "}
+        
       </button>
-      <button className="sub" onClick={subHandle}>
-        {" "}
-        Substract{" "}
-      </button>
-      <h3> Result: {res} </h3>
+      
+      <button className="sub" onClick={subHandle}  >  Substract </button>
+
+     <div className="res-clear"> 
+     <h3> Result: {res} </h3>
+     <button className="clear" onClick={onClickClear}> Clear </button>
+     
+     </div>
+
     </div>
   );
 }

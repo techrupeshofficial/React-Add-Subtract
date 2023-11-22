@@ -57,8 +57,30 @@ input {
   justify-content: space-between;
 }
 
+
+
 h3 {
   color: green;
   text-align: center;
   margin-top: 60px;
+}
+
+
+.clear{
+  background: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  width: 70px;
+  cursor: pointer;
+  margin-top: 50px;
+  border-radius: 4px;
+  
+}
+.res-clear{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+
 }
